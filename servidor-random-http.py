@@ -36,7 +36,7 @@ try:
         print('Request received:')
         print(recvSocket.recv(2048))
         print('Answering back...')
-        numrandom = random.randint(0,1000000000)
+        numrandom = random.randint(0, 1000000000)
         recvSocket.send(b"HTTP/1.1 200 OK\r\n\r\n" +
                         b"<html><body><h1>Hola.</h1>" +
                         b"<p>And in particular hello to you, " +
